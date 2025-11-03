@@ -28,7 +28,7 @@ As = 600            # tension rebar area (mm^2)
 cover_bot = 65      # cover to centroid of tension reinforcement (mm)
 Mu = 300e6          # factored moment (N-mm)
 
-print(analyze_flexure(b, h, fcp, fy, As, cover_bot, Asp=0, cover_top=None, n_iter=10))
-print(design_flexure_size(Mu, fcp, fy, cover_bot, aspect_ratio=2.0))
-print(design_flexure_rebar(Mu, b, h, fcp, fy, cover_bot, cover_top=None))
+print(rc_beam.analyze_flexure(b, h, fcp, fy, As, cover_bot, Asp=0, cover_top=None, n_iter=10))
+print(rc_beam.design_flexure_size(Mu, fcp, fy, cover_bot, aspect_ratio=2.0))
+print(rc_beam.design_flexure_rebar(Mu, b, h, fcp, fy, cover_bot, cover_top=None))
 ```
